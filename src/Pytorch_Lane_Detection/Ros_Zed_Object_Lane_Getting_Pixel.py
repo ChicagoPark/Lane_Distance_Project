@@ -265,27 +265,32 @@ def callback_img2(img2):
             k = np.array(k, np.int32)  # polylines 함수에 좌표는 np.array 형태를 유지해줘야하므로 추가한 코드이다.
             cv2.polylines(frame2, [k], False, (235, 206, 135), thickness=7)  # 좌측 레인 : sky blue color
             if len(objectlist) != 0:
-                objectx = int(objectlist[0][0])
-                objecty = int(objectlist[0][1])
-                objectid = objectlist[0][2]
 
-                lanex = int(left_fit[0] * objecty ** 2 + left_fit[1] * objecty + left_fit[2])
-                laney = objecty
-                print(f'{objectx}   {objecty}    {lanex}   {laney}')
+                # TO remove overflow
+                if len(objectlist) >= 25:
+                    objectlist.clear()
+                else:
+                    objectx = int(objectlist[0][0])
+                    objecty = int(objectlist[0][1])
+                    objectid = objectlist[0][2]
 
-                # Plotting between vehicle and lane
-                cv2.line(frame2, (objectx, objecty), (lanex, laney), (0, 0, 255), thickness = 4, lineType=None, shift=None)
+                    lanex = int(left_fit[0] * objecty ** 2 + left_fit[1] * objecty + left_fit[2])
+                    laney = objecty
+                    print(f'{objectx}   {objecty}    {lanex}   {laney}')
 
-                cv2.rectangle(frame2, (lanex-75, laney), (lanex-45, laney-25), (100, 0, 255), -1)
-                cv2.putText(frame2, str(int(objectid)), (lanex-70, laney-10), cv2.FONT_HERSHEY_SIMPLEX, 0.6,
-                            (255, 255, 255), 1)
-                '''
-                cv2.rectangle(frame1, (x1, y1), (x1 + box_w, y1 + box_h), color, 1)
-                cv2.rectangle(frame1, (x1, y1 - 35), (x1 + len(cls) * 19 + 80, y1), color, -1)
-                cv2.putText(frame1, cls + "-" + str(int(obj_id)), (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 3)
-                '''
-                #print(len(objectlist))
-                objectlist.pop(0)
+                    # Plotting between vehicle and lane
+                    cv2.line(frame2, (objectx, objecty), (lanex, laney), (0, 0, 255), thickness = 4, lineType=None, shift=None)
+
+                    cv2.rectangle(frame2, (lanex-75, laney), (lanex-45, laney-25), (100, 0, 255), -1)
+                    cv2.putText(frame2, str(int(objectid)), (lanex-70, laney-10), cv2.FONT_HERSHEY_SIMPLEX, 0.6,
+                                (255, 255, 255), 1)
+                    '''
+                    cv2.rectangle(frame1, (x1, y1), (x1 + box_w, y1 + box_h), color, 1)
+                    cv2.rectangle(frame1, (x1, y1 - 35), (x1 + len(cls) * 19 + 80, y1), color, -1)
+                    cv2.putText(frame1, cls + "-" + str(int(obj_id)), (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 3)
+                    '''
+                    #print(len(objectlist))
+                    objectlist.pop(0)
             print(len(objectlist))
 
 
