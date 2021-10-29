@@ -1,4 +1,6 @@
-# Lane_Distance_Project
+# UROP Project on Summer Vacation
+
+### `Real Time Lateral Distance Estimation of other vehicles`
 
 ## [0] Project Intuition with Final Result
 
