@@ -2,9 +2,12 @@
 
 ### `Real Time Lateral Distance Estimation of other vehicles`
 
-## [0] Project Intuition with Final Result
+## [Basic Sensor] 7 Livox Horizon LiDARs which cover 360 degree, ZED stereo Camera
+<img width="450" alt="LiDAR_Arrange" src="https://user-images.githubusercontent.com/73331241/139469477-5e33ac45-71a2-47df-b833-db787c210d53.jpg">
 
-https://user-images.githubusercontent.com/73331241/139472235-0020e972-21e3-4877-b007-5598c384c4a9.mp4
+## [0] Project Introduction
+
+`Distance between mid-center points of vehicles and adjacent lanes`
 
 
 `2D Object Tracking and Lane Detection methods are omitted. My another repository dealt with that.`
