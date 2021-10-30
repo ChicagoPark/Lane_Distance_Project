@@ -1,4 +1,4 @@
-# UROP Project on Summer Vacation
+# Supported by the National Research Foundation of Korea(NRF) grant funded by the Korea government(MSIT)
 
 ### `Real Time Lateral Distance Estimation of other vehicles`
 
