@@ -18,6 +18,17 @@ https://user-images.githubusercontent.com/73331241/139474003-86f494d0-bda1-44cb-
 
 ## [2] Interesting Pixels Plotting on Image
 
+### 박스의 중심 하부점에 대해 점을 받아오기
+python
+```
+# 오브젝트 좌표 얻어오는것
+```
+### Object 점에서 인접한 Lane 에 대한 정보를 얻어오기
+python
+```
+# 차선 좌표 얻어오는 코드
+```
+
 https://user-images.githubusercontent.com/73331241/139473571-bbcd0951-5f6a-44ec-8ecc-5b511dec6036.mov
 
 ## [3] Preparing to get Point Cloud projected on Image point for getting distance
@@ -26,4 +37,21 @@ https://user-images.githubusercontent.com/73331241/139473050-5e7f5257-36fd-466d-
 
 ## [4] Appling in real time on driving and display the distance
 
+### 우리가 [2] 에서 구한 interesting point 에 projecting 이 된 Point cloud 에 접근을 하여 거리를 추정하는 것
+python
+```
+#point 매칭 부등호 
+```
+
+```python
+# 거리를 추정하는 
+```
+
 https://user-images.githubusercontent.com/73331241/139472235-0020e972-21e3-4877-b007-5598c384c4a9.mp4
+
+
+
+# 코드 움직임
+
+
+최종 : distance_esitmation.cpp
