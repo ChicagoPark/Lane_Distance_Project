@@ -1,7 +1,6 @@
-# Supported by the National Research Foundation of Korea(NRF) grant funded by the Korea government(MSIT)
+`Supported by the National Research Foundation of Korea(NRF) grant funded by the Korea government(MSIT)`
 
-# The Sophisticated version for this project is in "__" this repository.
-# Here is just for SIMPLE PROJECT
+#### The Sophisticated version for this project is in "__" this repository. This repository is just SIMPLE PROJECT
 
 ### `Real Time Lateral Distance Estimation of other vehicles`
 
