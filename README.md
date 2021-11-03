@@ -1,6 +1,11 @@
 # Supported by the National Research Foundation of Korea(NRF) grant funded by the Korea government(MSIT)
 
+# The Sophisticated version for this project is in "__" this repository.
+# Here is just for SIMPLE PROJECT
+
 ### `Real Time Lateral Distance Estimation of other vehicles`
+
+![Intro_Picture](https://user-images.githubusercontent.com/73331241/140094544-b9ef6080-121a-44b9-ad79-0d5e1e841e77.jpeg)
 
 ## [Basic Sensor] 7 Livox Horizon LiDARs which cover 360 degree, ZED stereo Camera
 <img width="450" alt="LiDAR_Arrange" src="https://user-images.githubusercontent.com/73331241/139469477-5e33ac45-71a2-47df-b833-db787c210d53.jpg">
