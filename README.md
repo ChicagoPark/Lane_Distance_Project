@@ -1,7 +1,5 @@
 `Supported by the National Research Foundation of Korea(NRF) grant funded by the Korea government(MSIT)`
 
-#### The Sophisticated version for this project is in "__" this repository. This repository is just SIMPLE PROJECT
-
 ### `Real Time Lateral Distance Estimation of other vehicles`
 
 <img width="450" alt="LiDAR_Arrange" src="https://user-images.githubusercontent.com/73331241/140094544-b9ef6080-121a-44b9-ad79-0d5e1e841e77.jpeg">
@@ -12,7 +10,6 @@
 ## [0] Project Introduction
 
 `Distance between mid-center points of vehicles and adjacent lanes`
-
 
 `2D Object Tracking and Lane Detection methods are omitted. My another repository dealt with that.`
 
@@ -36,48 +33,33 @@ https://user-images.githubusercontent.com/73331241/139474003-86f494d0-bda1-44cb-
 
 ## [3] Interesting Pixels Plotting on Image
 
-### 박스의 중심 하부점에 대해 점을 받아오기
+### Get a point on the lower middle part of bounding box
 
-```python
-# 오브젝트 좌표 얻어오는것
-```
-### Object 점에서 인접한 Lane 에 대한 정보를 얻어오기
-
-```python
-# 차선 좌표 얻어오는 코드
-```
+### Get the points of lanes corresponding adjacent objects
 
 https://user-images.githubusercontent.com/73331241/139473571-bbcd0951-5f6a-44ec-8ecc-5b511dec6036.mov
 
 ## [4] Preparing to get Point Cloud projected on Image point for getting distance
 
-### [4-1] 포인트 클라우드를 이미지상에 프로젝션한다. 이때 Object 와 Lane 에 대해서 별도로 진행한다.
+### [4-1] Project the 3D points of obstacles and plane onto the image, respectively
 
 <img width="300" alt="Distance Picture" src="https://user-images.githubusercontent.com/73331241/140095109-bf828129-b8e8-43d7-8cba-02e87a5b9a08.jpeg">
 
 
-### [4-2] 이미지 상에 프로젝션된 포인트 클라우드에 접근하여 두 점사이의 거리를 측정한다.
+### [4-2] Measure the distance between the two points using the projected point cloud on specific pixels
 
 https://user-images.githubusercontent.com/73331241/139473050-5e7f5257-36fd-466d-b767-e769b5859b70.mp4
 
 ## [5] Appling in real time on driving and display the distance
 
-### 우리가 [2] 에서 구한 interesting point 에 projecting 이 된 Point cloud 에 접근을 하여 거리를 추정하는 것
-
-```python
-#point 매칭 부등호 
-```
-
-```python
-# 거리를 추정하는 
-```
 
 https://user-images.githubusercontent.com/73331241/139472235-0020e972-21e3-4877-b007-5598c384c4a9.mp4
 
 
-
+<!--
 # 코드 움직임
 1. 카메라와 라이다 작동시키기
 2. 오브젝트 디텍션
 3.
 최종 : distance_esitmation.cpp
+-->
