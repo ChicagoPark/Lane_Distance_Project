@@ -2,7 +2,7 @@
 
 ### `Real Time Lateral Distance Estimation of other vehicles`
 
-<img width="450" alt="LiDAR_Arrange" src="https://user-images.githubusercontent.com/73331241/140094544-b9ef6080-121a-44b9-ad79-0d5e1e841e77.jpeg">
+<img width="750" alt="Overall_Pipeline" src="https://user-images.githubusercontent.com/73331241/162564892-2428b167-606e-46f7-bf85-bce40cf37345.jpeg">
 
 ## [Basic Sensor] 7 Livox Horizon LiDARs which cover 360 degree, ZED stereo Camera
 <img width="450" alt="LiDAR_Arrange" src="https://user-images.githubusercontent.com/73331241/139469477-5e33ac45-71a2-47df-b833-db787c210d53.jpg">
